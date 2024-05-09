@@ -1,28 +1,49 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <html lang="en">
     <meta charset="UTF-8">
-    <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
     <link rel="stylesheet" href="home.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <div class="header-background"></div>
+        <div class="dropdown-container">
+        <button class="dropdown-btn" onclick="toggleDropdown(event)"><img src="/images/menubars.png" alt=""></button>
+        <div class="dropdown-content" id="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
         <h1>John Waugh</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+
     <main>
-        
-    </main>    
+        <img class="background-image" src="/images/230630_KAW_DSF4554.jpg" alt="Rose Background Image">
+        <div class="headshot-background"></div>
+        <div class="headshot-container">
+            <img class="headshot" src="/images/Team Sunergy Race Headshots_KAW_1.jpg" alt="Your Image">
+        </div>
+        <h1>Hi, I'm John.
+            <p>Embedded Systems Engineer with Team Sunergy
+                <br> CS Undergraduate @ Appalachian State
+            </p>
+        </h1>
+    </main>
+
+    <footer>
+        <div class="footer-background"></div>
+    </footer>
+
+    <script src="home.js"></script>
 </body>
 
-<script src="home.js"></script>
 </html>
