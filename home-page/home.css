@@ -3,31 +3,38 @@ main,
 h1 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Raleway, sans-serif;
     line-height: 1.6;
+    overflow: hidden;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 3vw;
 }
 
 h1 p {
-    font-size: 36px;
+    font-size: 1.5vw;
 }
 
 main {
-    text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #202020;
-    position: relative;
     z-index: -2;
 }
 
+
 main h1 {
     position: absolute;
-    top: 62.5%;
+    text-align: center;
+    top: 71%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #E4D5C7;
@@ -39,32 +46,26 @@ header {
     background-color: #247158;
     color: #E4D5C7;
     text-align: right;
-    padding-right: 20px;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-}
-
-header h1{
-    padding-right: 10px;
+    padding-right: 1.75vw;
+    border-bottom-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
 }
 
 .header-background {
     position: absolute;
-    top: -35px;
-    left: 0;
-    width: 100%;
-    height: 160px;
+    left: -1vw;
+    width: 102%;
+    height: 5.5vw;
     background-color: #186049;
     z-index: -1;
-    padding-bottom: 20px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 3.5vw;
+    border-bottom-right-radius: 3.5vw;
 }
 
 .dropdown-btn {
     position: absolute;
-    top: 10px;
-    left: 25px;
+    top: 0.4vw;
+    left: 1.5vw;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -72,17 +73,19 @@ header h1{
 
 .dropdown-btn :hover{
     background-color: #186049;
-    border-radius: 8px;
+    border-radius: 0.25vw;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #186049;
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 3vw;
+    box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0,0,0,0.2);
     z-index: 1;
     opacity: 0;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
     transition: ease-in 0.5s ease-out;
     transform-origin: top;
     transform: scaleY(0);
@@ -90,11 +93,11 @@ header h1{
 
 .dropdown-content a {
     color: #E4D5C7;
-    padding: 36px 16px;
+    padding: 1vw 1.6vw;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 2vw;
     display: block;
 }
 
@@ -110,12 +113,12 @@ header h1{
 
 .headshot-container {
     background-color: black;
-    width: 450px;
-    height: 450px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 30%;
+    top: 37.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -123,12 +126,12 @@ header h1{
 
 .headshot-background {
     background-color: #E4D5C7;
-    width: 460px;
-    height: 460px;
+    width: 21vw;
+    height: 21vw;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 30%;
+    top: 37.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -136,43 +139,40 @@ header h1{
 
 .headshot {
     width: auto;
-    height: 100%;
+    height: 140%;
     object-fit: cover;
 }
 
 .background-image {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
     filter: opacity(10%);
-    position: relative;
+    position: fixed;
     z-index: -2;
-    margin-top: -125px;
+    top: -10vw;
 }
 
 footer {
     position: relative;
     position: absolute;
-    bottom: -220px;
-    left: 0;
-    width: 100%;
-    height: 90px;
+    top: 82%;
+    left: -0.5vw;
+    width: 101%;
+    height: 100%;
     background-color: #95877A;
     z-index: 1;
-    padding-top: 20px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    padding-top: 0.75vw;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
 }
 
 .footer-background {
     position: absolute;
-    bottom: -100px;
-    left: 0;
-    width: 100%;
-    height: 90px;
+    left: 0.5vw;
+    width: 99%;
+    height: 100%;
     background-color: #E4D5C7;
     z-index: -1;
-    padding-top: 100px;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
+    border-top-left-radius: 2.75vw;
+    border-top-right-radius: 2.75vw;
 }
 
