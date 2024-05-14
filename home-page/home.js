@@ -1,5 +1,5 @@
 function toggleDropdown(event) {
-    event.stopPropagation(); // Prevents the click event from bubbling up
+    event.stopPropagation();
     var dropdownContent = document.getElementById("dropdown-content");
     dropdownContent.classList.toggle("show");
 }

@@ -71,7 +71,7 @@ header {
     cursor: pointer;
 }
 
-.dropdown-btn :hover{
+.dropdown-btn :hover {
     background-color: #186049;
     border-radius: 0.25vw;
 }
@@ -81,7 +81,7 @@ header {
     position: absolute;
     background-color: #186049;
     min-width: 3vw;
-    box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0,0,0,0.2);
+    box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0, 0, 0, 0.2);
     z-index: 1;
     opacity: 0;
     border-bottom-left-radius: 1vw;
@@ -148,7 +148,7 @@ header {
     filter: opacity(10%);
     position: fixed;
     z-index: -2;
-    top: -10vw;
+    top: -22vw;
 }
 
 footer {
@@ -176,3 +176,129 @@ footer {
     border-top-right-radius: 2.75vw;
 }
 
+.gmail {
+    background-color: #186049;
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 9.75%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.gmail-logo{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    object-fit: contain; 
+    opacity: 40%;
+    z-index: 1;
+}
+
+.gmail-background{
+    background-color: #247158;
+    width: 5.75vw;
+    height: 5.75vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.linkedin {
+    background-color: #186049;
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 9.75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.linkedin-logo{
+    position: relative;
+    top: 48%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    object-fit: contain; 
+    opacity: 40%;
+    z-index: 1;
+}
+
+.linkedin-background{
+    background-color: #247158;
+    width: 5.75vw;
+    height: 5.75vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.github {
+    background-color: #186049;
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 9.75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.github-logo{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    object-fit: contain; 
+    opacity: 40%;
+    z-index: 1;
+}
+
+.github-background{
+    background-color: #247158;
+    width: 5.75vw;
+    height: 5.75vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.copyright{
+    color: #95877A;
+    font-size: 1.25vw;
+    position: relative;
+    top: 7.5%;
+    left: 5%;
+}
+
+.contact{
+    color: #95877A;
+    font-size: 1.25vw;
+    position: relative;
+    top: 3%;
+    left: 87.5%;
+}
