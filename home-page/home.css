@@ -12,6 +12,10 @@ body {
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 h1 {
     font-size: 3vw;
 }
@@ -101,8 +105,20 @@ header {
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:last-child {
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.dropdown-content a:not(:last-child):hover {
     background-color: #185548;
+    
+}
+
+.dropdown-content a:last-child:hover {
+    background-color: #185548;
+    border-bottom-left-radius: 1vw; 
+    border-bottom-right-radius: 1vw;
 }
 
 .dropdown-content.show {
