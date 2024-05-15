@@ -154,6 +154,7 @@ main h1 {
     position: absolute;
     backface-visibility: hidden;
     background-color: #247158;
+    border: 6px solid #186049;
     border-radius: 1vw;
     transition: transform 0.7s ease;
 }
