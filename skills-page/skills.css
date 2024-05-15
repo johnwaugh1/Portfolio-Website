@@ -143,6 +143,10 @@ main h1 {
     padding: 0.5% 2.5% 0% 3%;
 }
 
+#html-css-js p{
+    margin-top: 1%;
+}
+
 .panel-front,
 .panel-back {
     width: 100%;
