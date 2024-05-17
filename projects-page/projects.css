@@ -65,14 +65,16 @@ main {
     position: relative;
     top: -1.5vw;
     left: 0.75vw;
-    color: #202020;
+    color: #fafafa;
+    z-index: 2;
 }
 
 .box p{
     position: relative;
     top: -3.75vw;
     left: 0.725vw;
-    color: #202020;
+    color: #fafafa;
+    z-index: 2;
 }
 
 #website::after {
@@ -83,13 +85,70 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 #website {
     position: relative;
-    background-image: url('/images/230630_KAW_DSF4554.jpg');
+    background-image: url('/images/website.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#database::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#database {
+    position: relative;
+    background-image: url('/images/database.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#statemachine::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#statemachine {
+    position: relative;
+    background-image: url('/images/stm.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#texteditor::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#texteditor {
+    position: relative;
+    background-image: url('/images/texteditor.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -124,7 +183,7 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 9999;
+    z-index: 99;
 }
 
 .panel-content {
