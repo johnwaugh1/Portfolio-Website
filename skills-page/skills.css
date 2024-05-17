@@ -156,7 +156,7 @@ main h1 {
     background-color: #247158;
     border: 6px solid #186049;
     border-radius: 1vw;
-    transition: transform 0.7s ease;
+    transition: transform 1s ease;
 }
 
 .panel-back {
