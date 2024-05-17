@@ -207,6 +207,7 @@ main {
 .panel h2 {
     font-size: 6em;
     margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 .panel p {
