@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects Page</title>
     <link rel="stylesheet" href="projects.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -31,43 +30,40 @@
     <main>
         <div class="grid">
             <div class="row">
-            <div class="box" id="website">
-                <h2>Project Title</h2>
-                <p>Description of the project...</p>
-                <div class="overlay">
+                <div class="box" id="website" onclick="openPanel('website')">
+                    <h2>Portfolio Website</h2>
+                    <p>Website designed to showcase my relevant coursework, projects, and skills.</p>
+                    <div class="overlay"></div>
                 </div>
-            </div>
-            <div class="box" id="database">
-                <h2>Project Title</h2>
-                <p>Description of the project...</p>
-                <div class="overlay">
+                <div class="box" id="database" onclick="openPanel('database')">
+                    <h2>Database System</h2>
+                    <p>Database management system designed for a fictional company by a small team of my peers and
+                        I.</p>
+                    <div class="overlay"></div>
                 </div>
-            </div>
             </div>
             <div class="row">
-                <div class="box" id="statemachine">
-                    <h2>Project Title</h2>
-                    <p>Description of the project...</p>
-                    <div class="overlay">
-                    </div>
+                <div class="box" id="statemachine" onclick="openPanel('statemachine')">
+                    <h2>State Machine</h2>
+                    <p>Simple state machine built in C to indicate fault states of a vehicle based on CAN bus
+                        data.</p>
+                    <div class="overlay"></div>
                 </div>
-                <div class="box" id="texteditor">
-                    <h2>Project Title</h2>
-                    <p>Description of the project...</p>
-                    <div class="overlay">
-                    </div>
+                <div class="box" id="texteditor" onclick="openPanel('texteditor')">
+                    <h2>Text Editor</h2>
+                    <p>Simple web-based text editor designed to emulate a product like Google Docs.</p>
+                    <div class="overlay"></div>
                 </div>
-                </div>
+            </div>
         </div>
     </main>
 
     <div class="panel" id="panel">
-        <div class="panel-content">
-            <!-- Content for the panel goes here -->
-            <h2>Project Title</h2>
-            <p>Detailed description of the project...</p>
-            <!-- Close button -->
-            <button id="closePanel">Close</button>
+        <div class="panel-content" id="panel-content">
+            <h2 id="panel-title">Project Title</h2>
+            <p id="panel-description">Detailed description of the project...</p>
+            <div id="panel-link"></div>
+            <button id="closePanel" onclick="closePanel()">Close</button>
         </div>
     </div>
 
@@ -92,7 +88,7 @@
             <div class="github-background"></div>
         </div>
         <div class="copyright">Copyright © John Waugh 2024</div>
-        <a href="/contact-page/contact.html" class="contact me">Contact Me</div>
+        <a href="/contact-page/contact.html" class="contact me">Contact Me</a>
     </footer>
 
     <script src="projects.js"></script>
