@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="dropdown-container">
+            <button class="dropdown-btn" onclick="toggleDropdown(event)"><img src="/images/menubars.png"
+                    alt=""></button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="/home-page/home.html">Home</a>
+                <a href="/about-page/about.html">About</a>
+                <a href="/skills-page/skills.html">Skills</a>
+                <a href="/projects-page/projects.html">Projects</a>
+                <a href="/contact-page/contact.html">Contact</a>
+            </div>
+            <h1>Contact Info</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="message-box">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/mkndeaej" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="send-message">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-background"></div>
+        <div class="gmail">
+            <a href="mailto:your-johnmwaugh21@gmail.com" target="_blank">
+                <img class="gmail-logo" src="/images/gmail.png" alt="gmail logo">
+            </a>
+            <div class="gmail-background"></div>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/john-waugh1/" target="_blank">
+                <img class="linkedin-logo" src="/images/linkedin.png" alt="linkedin logo">
+            </a>
+            <div class="linkedin-background"></div>
+        </div>
+        <div class="github">
+            <a href="https://github.com/johnwaugh1" target="_blank">
+                <img class="github-logo" src="/images/github.png" alt="github logo">
+            </a>
+            <div class="github-background"></div>
+        </div>
+        <div class="copyright">Copyright © John Waugh 2024</div>
+        <a href="/contact-page/contact.html" class="contact me">Contact Me</div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
