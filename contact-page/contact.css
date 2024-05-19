@@ -28,51 +28,6 @@ h2{
     font-size: 2.25vw;
 }
 
-main {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    height: 40vw;
-    background-color: #FFFFFF;
-    z-index: -2;
-    overflow-y: auto;
-    position: relative;
-}
-
-.message-box {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 99;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #247158;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 header {
     position: relative;
     background-color: #247158;
@@ -153,6 +108,75 @@ header {
     display: block;
     transform: scaleY(1);
     opacity: 1;
+}
+
+main {
+    top: 8vw;
+    bottom: 0;
+    left: 0;
+    height: 30vw;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    position: relative;
+    padding: 20px;
+}
+
+.message-box {
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 99;
+    text-align: center;
+}
+
+.message-box h2{
+    font-size: 5em;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+.message-box p {
+    font-weight: bold;
+}
+
+.message-box p a{
+    font-weight: normal;
+    color: #95877A;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"]{
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 5vw;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #247158;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
