@@ -52,6 +52,12 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-btn img {
+    width: 3.75vw;
+    height: auto;
 }
 
 .dropdown-btn :hover {
@@ -107,34 +113,25 @@ header {
 }
 
 main {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: 45%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
     width: 100%;
     background-color: #FFFFFF;
     z-index: -2;
-}
-
-main h1 {
-    position: absolute;
-    text-align: center;
-    top: 71%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #E4D5C7;
-    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .panel {
     width: 30%;
     height: 10vw;
-    top: 17%;
-    left: 2.5%;
     position: relative;
     perspective: 52vw;
-    float: left;
-    margin: 2% 1%;
+    margin: 1% 1%;
 }
 
 .panel p{
@@ -142,7 +139,6 @@ main h1 {
     color: #E4D5C7;
     padding: 0.5% 2.5% 0% 3%;
 }
-
 #html-css-js p{
     margin-top: 1%;
 }

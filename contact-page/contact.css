@@ -58,6 +58,11 @@ header {
     cursor: pointer;
 }
 
+.dropdown-btn img {
+    width: 3.75vw;
+    height: auto;
+}
+
 .dropdown-btn :hover {
     background-color: #186049;
     border-radius: 0.25vw;
@@ -111,41 +116,42 @@ header {
 }
 
 main {
-    top: 4vw;
+    top: 1vw;
     bottom: 0;
     left: 0;
-    height: 30w;
+    height: 30vw;
     background-color: #FFFFFF;
-    overflow-y: auto;
     position: relative;
     padding: 20px;
 }
 
 .message-box {
     width: 70%;
-    height: auto;
     max-width: 50%;
     margin: 20px auto;
     margin-top: -10px;
-    padding: 20px;
+    padding: 0.5vw;
     background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     z-index: 99;
     text-align: center;
+    position: absolute; /* Set position to fixed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
 }
 
-.message-box h2{
-    font-size: 5em;
-    margin-top: 10px;
-    margin-bottom: -20px;
+.message-box h2 {
+    font-size: 3.5vw; 
+    margin-top: 0.5vw;
+    margin-bottom: -1vw; 
 }
 
 .message-box p {
     font-weight: bold;
 }
 
-.message-box p a{
+.message-box p a {
     font-weight: normal;
     color: #95877A;
 }
@@ -154,43 +160,38 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 1vw;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form input[type="tel"]{
-    flex: 1;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 2em;
-    width: 100%;
+.contact-form input[type="tel"],
+.contact-form textarea {
+    margin-bottom: 1vw; 
+    padding: 1vw; 
+    border: 0.01vw solid #ccc; 
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    width: 90%;
 }
 
-.contact-form textarea{
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 5vw;
-    font-size: 2.5em;
-    width: 100%;
+.contact-form textarea {
+    height: 3vw;
+    font-size: 1.15vw;
 }
 
 .contact-form button {
-    padding: 30px 20px;
+    padding: 1vw 2vw;
     background-color: #247158;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5vw;
     cursor: pointer;
-    font-size: 2.5em;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 1.25vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0,0,0,0.2); 
     width: 30%;
 }
+
 
 footer {
     position: absolute;

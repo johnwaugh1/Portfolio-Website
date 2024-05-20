@@ -99,9 +99,15 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 0;
 }
 
-.dropdown-btn :hover {
+.dropdown-btn img {
+    width: 3.75vw;
+    height: auto;
+}
+
+.dropdown-btn:hover {
     background-color: #186049;
     border-radius: 0.25vw;
 }
