@@ -118,12 +118,12 @@ header {
 
 .dropdown-content a:not(:last-child):hover {
     background-color: #185548;
-    
+
 }
 
 .dropdown-content a:last-child:hover {
     background-color: #185548;
-    border-bottom-left-radius: 1vw; 
+    border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
 }
 
@@ -234,12 +234,12 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    object-fit: contain; 
+    object-fit: contain;
     opacity: 40%;
     z-index: 1;
 }
 
-.linkedin-logo{
+.linkedin-logo {
     height: 90%;
     width: 80%;
     left: 51%;
