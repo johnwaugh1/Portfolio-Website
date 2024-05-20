@@ -34,7 +34,6 @@ main {
     z-index: -2;
 }
 
-
 main h1 {
     position: absolute;
     text-align: center;
@@ -91,12 +90,12 @@ header {
     position: absolute;
     background-color: #186049;
     min-width: 3vw;
-    box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8vw 1.6vw 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     opacity: 0;
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    transition: ease-in 0.5s ease-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     transform-origin: top;
     transform: scaleY(0);
 }
@@ -111,20 +110,8 @@ header {
     display: block;
 }
 
-.dropdown-content a:last-child {
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
-}
-
-.dropdown-content a:not(:last-child):hover {
+.dropdown-content a:hover {
     background-color: #185548;
-
-}
-
-.dropdown-content a:last-child:hover {
-    background-color: #185548;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
 }
 
 .dropdown-content.show {
@@ -151,7 +138,6 @@ header {
     width: 21vw;
     height: 21vw;
     border-radius: 50%;
-    overflow: hidden;
     position: absolute;
     top: 37.5%;
     left: 50%;
@@ -177,7 +163,6 @@ header {
 }
 
 footer {
-    position: relative;
     position: absolute;
     top: 82%;
     left: -0.5vw;
@@ -235,7 +220,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 60%;
     object-fit: contain;
-    opacity: 40%;
+    opacity: 0.4;
     z-index: 1;
 }
 
@@ -252,7 +237,6 @@ footer {
     width: 5.75vw;
     height: 5.75vw;
     border-radius: 50%;
-    overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -276,13 +260,13 @@ footer {
     font-size: 1.25vw;
     position: absolute;
     top: 8.5%;
-    transform: translateX(-50%, -50%);
+    transform: translateX(-50%);
 }
 
 .copyright {
-    left: 5%;
+    left: 15%;
 }
 
 .contact {
-    right: 5%;
+    right: 3%;
 }
