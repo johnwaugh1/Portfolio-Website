@@ -28,6 +28,27 @@ h2 {
     font-size: 2.25vw;
 }
 
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e4d5c7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #247158;
+    border-radius: 10px;
+    border: 3px solid #e4d5c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #186049;
+}
+
+
 main {
     display: flex;
     justify-content: center;
@@ -65,7 +86,7 @@ main {
     cursor: pointer;
 }
 
-.box h2{
+.box h2 {
     position: relative;
     top: -1.5vw;
     left: 0.75vw;
@@ -73,7 +94,7 @@ main {
     z-index: 2;
 }
 
-.box p{
+.box p {
     position: relative;
     top: -3.75vw;
     left: 0.725vw;
@@ -271,7 +292,7 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
- padding: 0;
+    padding: 0;
 }
 
 .dropdown-btn img {
@@ -388,12 +409,12 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    object-fit: contain; 
+    object-fit: contain;
     opacity: 40%;
     z-index: 1;
 }
 
-.linkedin-logo{
+.linkedin-logo {
     height: 90%;
     width: 80%;
     left: 51%;

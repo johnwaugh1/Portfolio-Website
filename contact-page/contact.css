@@ -28,6 +28,27 @@ h2 {
     font-size: 2.25vw;
 }
 
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e4d5c7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #247158;
+    border-radius: 10px;
+    border: 3px solid #e4d5c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #186049;
+}
+
+
 header {
     position: relative;
     background-color: #247158;

@@ -14,18 +14,20 @@
 <body>
     <header>
         <div class="header-background"></div>
-        <div class="dropdown-container">
-            <button class="dropdown-btn" onclick="toggleDropdown(event)"><img src="/images/menubars.png"
-                    alt=""></button>
-            <div class="dropdown-content" id="dropdown-content">
-                <a href="/home-page/home.html">Home</a>
-                <a href="/about-page/about.html">About</a>
-                <a href="/skills-page/skills.html">Skills</a>
-                <a href="/projects-page/projects.html">Projects</a>
-                <a href="/contact-page/contact.html">Contact</a>
+        <nav class="dropdown-container">
+            <button class="dropdown-btn" onclick="toggleDropdown(event)" aria-haspopup="true" aria-expanded="false"
+                aria-controls="dropdown-content">
+                <img src="/images/menubars.png" alt="Menu">
+            </button>
+            <div class="dropdown-content" id="dropdown-content" role="menu" aria-hidden="true">
+                <a href="/home-page/home.html" role="menuitem">Home</a>
+                <a href="/about-page/about.html" role="menuitem">About</a>
+                <a href="/skills-page/skills.html" role="menuitem">Skills</a>
+                <a href="/projects-page/projects.html" role="menuitem">Projects</a>
+                <a href="/contact-page/contact.html" role="menuitem">Contact</a>
             </div>
             <h1>About</h1>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -60,25 +62,25 @@
     <footer>
         <div class="footer-background"></div>
         <div class="gmail">
-            <a href="mailto:your-johnmwaugh21@gmail.com" target="_blank">
-                <img class="gmail-logo" src="/images/gmail.png" alt="gmail logo">
+            <a href="mailto:johnmwaugh21@gmail.com" target="_blank">
+                <img class="gmail-logo" src="/images/gmail.png" alt="Gmail logo">
             </a>
             <div class="gmail-background"></div>
         </div>
         <div class="linkedin">
             <a href="https://www.linkedin.com/in/john-waugh1/" target="_blank">
-                <img class="linkedin-logo" src="/images/linkedin.png" alt="linkedin logo">
+                <img class="linkedin-logo" src="/images/linkedin.png" alt="LinkedIn logo">
             </a>
             <div class="linkedin-background"></div>
         </div>
         <div class="github">
             <a href="https://github.com/johnwaugh1" target="_blank">
-                <img class="github-logo" src="/images/github.png" alt="github logo">
+                <img class="github-logo" src="/images/github.png" alt="GitHub logo">
             </a>
             <div class="github-background"></div>
         </div>
         <div class="copyright">Copyright © John Waugh 2024</div>
-        <a href="/contact-page/contact.html" class="contact me">Contact Me</div>
+        <a href="/contact-page/contact.html" class="contact">Contact Me</a>
     </footer>
 
     <script src="about.js"></script>

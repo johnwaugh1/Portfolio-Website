@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Page</title>
     <link rel="stylesheet" href="skills.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header-background"></div>
         <div class="dropdown-container">
-            <button class="dropdown-btn" onclick="toggleDropdown(event)"><img src="/images/menubars.png"
-                    alt=""></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(event)">
+                <img src="/images/menubars.png" alt="Menu">
+            </button>
             <div class="dropdown-content" id="dropdown-content">
                 <a href="/home-page/home.html">Home</a>
                 <a href="/about-page/about.html">About</a>
@@ -31,7 +30,7 @@
     <main>
         <div class="panel">
             <div class="panel-front">
-                <img src="/images/java.png" alt="java logo" id="java-img">
+                <img src="/images/java.png" alt="Java logo" id="java-img">
             </div>
             <div class="panel-back" id="java">
                 <p>Java was the first programming language I learned, as it is the introductory language
@@ -42,7 +41,7 @@
         </div>
         <div class="panel">
             <div class="panel-front">
-                <img src="/images/python.png" alt="python logo" id="python-img">
+                <img src="/images/python.png" alt="Python logo" id="python-img">
             </div>
             <div class="panel-back" id="python">
                 <p>Python was the next language I learned after Java, and I have used it more when completing coursework than
@@ -53,7 +52,7 @@
         </div>
         <div class="panel">
             <div class="panel-front">
-                <img src="/images/sql.png" alt="sql logo" id="sql-img">
+                <img src="/images/sql.png" alt="SQL logo" id="sql-img">
             </div>
             <div class="panel-back" id="sql">
                 <p>I am fairly familiar with SQL, using it mainly in my coursework, paired with
@@ -65,9 +64,9 @@
         </div>
         <div class="panel">
             <div class="panel-front">
-                <img src="/images/html.png" alt="java logo" id="html-img">
-                <img src="/images/css.png" alt="java logo" id="css-img">
-                <img src="/images/javascript.png" alt="java logo" id="javascript-img">
+                <img src="/images/html.png" alt="HTML logo" id="html-img">
+                <img src="/images/css.png" alt="CSS logo" id="css-img">
+                <img src="/images/javascript.png" alt="JavaScript logo" id="javascript-img">
             </div>
             <div class="panel-back" id="html-css-js">
                 <p>I am very familiar with HTML, CSS, and JS, and many of my projects have some elements of
@@ -79,24 +78,24 @@
         </div>
         <div class="panel">
             <div class="panel-front">
-                <img src="/images/c.png" alt="java logo" id="c-img">
+                <img src="/images/c.png" alt="C logo" id="c-img">
             </div>
             <div class="panel-back" id="c">
                 <p>C is a language that I have used in one project and also in my relevant coursework, so I am
                     familiar with it. I mainly used it to create a basic state machine which gets flashed onto
                     microcontroller, which is able to read data and tell the user which state the machine is in via
-                    a combination of flashing LEDs. 
+                    a combination of flashing LEDs.
                 </p>
             </div>
         </div>
         <div class="panel">
             <div class="panel-front">
-                <img src="/images/r.png" alt="java logo" id="r-img">
+                <img src="/images/r.png" alt="R logo" id="r-img">
             </div>
-            <div class="panel-back">
+            <div class="panel-back" id="r">
                 <p>R is the language I am least familiar with, but I have a solid understanding of what
                     it can be used for, as I used it for a few months in a statistical data analysis course. It was
-                    interesting to see its capabilities, and I may included it in a project which deals with table creation
+                    interesting to see its capabilities, and I may include it in a project which deals with table creation
                     in the future.
                 </p>
             </div>
@@ -106,25 +105,25 @@
     <footer>
         <div class="footer-background"></div>
         <div class="gmail">
-            <a href="mailto:your-johnmwaugh21@gmail.com" target="_blank">
-                <img class="gmail-logo" src="/images/gmail.png" alt="gmail logo">
+            <a href="mailto:johnmwaugh21@gmail.com" target="_blank">
+                <img class="gmail-logo" src="/images/gmail.png" alt="Gmail logo">
             </a>
             <div class="gmail-background"></div>
         </div>
         <div class="linkedin">
             <a href="https://www.linkedin.com/in/john-waugh1/" target="_blank">
-                <img class="linkedin-logo" src="/images/linkedin.png" alt="linkedin logo">
+                <img class="linkedin-logo" src="/images/linkedin.png" alt="LinkedIn logo">
             </a>
             <div class="linkedin-background"></div>
         </div>
         <div class="github">
             <a href="https://github.com/johnwaugh1" target="_blank">
-                <img class="github-logo" src="/images/github.png" alt="github logo">
+                <img class="github-logo" src="/images/github.png" alt="GitHub logo">
             </a>
             <div class="github-background"></div>
         </div>
         <div class="copyright">Copyright © John Waugh 2024</div>
-        <a href="/contact-page/contact.html" class="contact me">Contact Me</div>
+        <a href="/contact-page/contact.html" class="contact">Contact Me</a>
     </footer>
 
     <script src="skills.js"></script>

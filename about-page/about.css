@@ -1,33 +1,62 @@
+/* General Reset */
 body,
 main,
-h1 {
+h1,
+h2,
+p,
+a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-a{
+/* Link Styles */
+a {
     text-decoration: none;
+    color: inherit;
 }
 
-p{
-    font-size: 1.5vw;
-}
-
+/* Typography Styles */
 h1 {
     font-size: 3vw;
 }
 
-h2{
+h2 {
     font-size: 2.25vw;
 }
 
+p {
+    font-size: 1.5vw;
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e4d5c7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #247158;
+    border-radius: 10px;
+    border: 3px solid #e4d5c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #186049; 
+}
+
+/* Main Styles */
 main {
     top: 0;
     bottom: 0;
@@ -44,11 +73,11 @@ main h1 {
     top: 20%;
     left: 13.85%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: #000;
     line-height: 1;
 }
 
-main h2{
+main h2 {
     position: absolute;
     text-align: left;
     margin: 0 auto;
@@ -59,7 +88,7 @@ main h2{
     line-height: 1;
 }
 
-main p{
+main p {
     position: absolute;
     text-align: left;
     margin: 0 auto;
@@ -71,6 +100,7 @@ main p{
     line-height: 1;
 }
 
+/* Header Styles */
 header {
     position: relative;
     background-color: #247158;
@@ -92,6 +122,7 @@ header {
     border-bottom-right-radius: 3.5vw;
 }
 
+/* Dropdown Button Styles */
 .dropdown-btn {
     position: absolute;
     top: 0.4vw;
@@ -112,17 +143,18 @@ header {
     border-radius: 0.25vw;
 }
 
+/* Dropdown Content Styles */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #186049;
     min-width: 3vw;
-    box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.2);
     z-index: 1;
     opacity: 0;
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    transition: ease-in 0.5s ease-out;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-out;
     transform-origin: top;
     transform: scaleY(0);
 }
@@ -130,7 +162,6 @@ header {
 .dropdown-content a {
     color: #E4D5C7;
     padding: 1vw 1.6vw;
-    text-decoration: none;
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
@@ -142,15 +173,8 @@ header {
     border-bottom-right-radius: 1vw;
 }
 
-.dropdown-content a:not(:last-child):hover {
+.dropdown-content a:hover {
     background-color: #185548;
-    
-}
-
-.dropdown-content a:last-child:hover {
-    background-color: #185548;
-    border-bottom-left-radius: 1vw; 
-    border-bottom-right-radius: 1vw;
 }
 
 .dropdown-content.show {
@@ -159,8 +183,9 @@ header {
     opacity: 1;
 }
 
-.headshot-container {
-    background-color: black;
+/* Headshot Styles */
+.headshot-container,
+.headshot-background {
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -172,17 +197,14 @@ header {
     z-index: -1;
 }
 
+.headshot-container {
+    background-color: #000;
+}
+
 .headshot-background {
     background-color: #E4D5C7;
     width: 21vw;
     height: 21vw;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: 37.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
 .headshot {
@@ -191,6 +213,7 @@ header {
     object-fit: cover;
 }
 
+/* Background Image Styles */
 .background-image {
     width: 100%;
     filter: opacity(10%);
@@ -199,6 +222,7 @@ header {
     top: -22vw;
 }
 
+/* Footer Styles */
 footer {
     position: absolute;
     top: 100%;
@@ -223,6 +247,7 @@ footer {
     border-top-right-radius: 2.75vw;
 }
 
+/* Social Icon Styles */
 .gmail,
 .linkedin,
 .github {
@@ -256,12 +281,12 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    object-fit: contain; 
+    object-fit: contain;
     opacity: 40%;
     z-index: 1;
 }
 
-.linkedin-logo{
+.linkedin-logo {
     height: 90%;
     width: 80%;
     left: 51%;
@@ -292,19 +317,20 @@ footer {
     height: 100%;
 }
 
+/* Footer Text Styles */
 .copyright,
 .contact {
     color: #95877A;
     font-size: 1.25vw;
     position: absolute;
     top: 55%;
-    transform: translateX(-50%, -50%);
+    transform: translateX(-50%);
 }
 
 .copyright {
-    left: 5%;
+    left: 15%;
 }
 
 .contact {
-    right: 5%;
+    right: 3%;
 }
