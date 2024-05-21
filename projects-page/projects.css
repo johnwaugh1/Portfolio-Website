@@ -28,7 +28,6 @@ h2 {
     font-size: 2.25vw;
 }
 
-/* Custom Scrollbar for Webkit Browsers */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -117,7 +116,7 @@ main {
 #website {
     position: relative;
     padding-right: 1vw;
-    background-image: url('/images/website.png');
+    background-image: url('/Portfolio-Website/images/website.png');
     background-size: cover;
     background-position: center;
 }
@@ -137,7 +136,7 @@ main {
 #database {
     position: relative;
     padding-right: 1vw;
-    background-image: url('/images/database.jpg');
+    background-image: url('/Portfolio-Website/images/database.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -157,7 +156,7 @@ main {
 #statemachine {
     position: relative;
     padding-right: 1vw;
-    background-image: url('/images/stm.jpg');
+    background-image: url('/Portfolio-Website/images/stm.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -177,7 +176,7 @@ main {
 #texteditor {
     position: relative;
     padding-right: 1vw;
-    background-image: url('/images/texteditor.jpg');
+    background-image: url('/Portfolio-Website/images/texteditor.jpg');
     background-size: cover;
     background-position: center;
 }
