@@ -1,1 +1,3 @@
-Portfolio Website
+# Portfolio Website
+
+Portfolio Website by John Waugh
