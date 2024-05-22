@@ -43,25 +43,25 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: #e4d5c7;
+    background: #f7f7f7;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #247158;
     border-radius: 10px;
-    border: 3px solid #e4d5c7;
+    border: 3px solid #f7f7f7;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #186049; 
+    background: #186049;
 }
 
 /* Header Styles */
 header {
     position: relative;
     background-color: #247158;
-    color: #E4D5C7;
+    color: #f7f7f7;
     text-align: right;
     padding-right: 2.5vw;
     border-bottom-left-radius: 2.5vw;
@@ -118,7 +118,7 @@ header {
 }
 
 .dropdown-content a {
-    color: #E4D5C7;
+    color: #f7f7f7;
     padding: 1vw 1.6vw;
     text-decoration: none;
     text-align: center;
@@ -128,7 +128,7 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: #185548;
+    background-color: #14503d;
 }
 
 .dropdown-content.show {
@@ -185,14 +185,14 @@ main p {
     padding: 0.5vw 1vw;
     font-size: 1.6vw;
     color: white;
-    background-color: #007BFF;
+    background-color: #0073e6;
     text-decoration: none;
     border-radius: 16px;
     transition: background-color 0.3s ease;
 }
 
 .resume:hover {
-    background-color: #0056b3;
+    background-color: #005bb5;
 }
 
 /* Footer Styles */
@@ -202,7 +202,7 @@ footer {
     left: -0.5vw;
     width: 101%;
     height: 15%;
-    background-color: #95877A;
+    background-color: #707070;
     z-index: 1;
     padding-top: 0.75vw;
     margin-top: 1vw;
@@ -215,7 +215,7 @@ footer {
     left: 0.5vw;
     width: 99%;
     height: 100%;
-    background-color: #E4D5C7;
+    background-color: #ffe8dc;
     z-index: -1;
     border-top-left-radius: 2.75vw;
     border-top-right-radius: 2.75vw;
@@ -233,6 +233,13 @@ footer {
     position: absolute;
     top: 60%;
     transform: translate(-50%, -50%);
+    transition: filter 0.3s ease;
+}
+
+.gmail:hover,
+.linkedin:hover,
+.github:hover {
+    filter: brightness(90%);
 }
 
 .gmail {
@@ -256,7 +263,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 60%;
     object-fit: contain;
-    opacity: 40%;
+    opacity: 0.4;
     z-index: 1;
 }
 
@@ -294,7 +301,7 @@ footer {
 /* Footer Text Styles */
 .copyright,
 .contact {
-    color: #95877A;
+    color: #707070;
     font-size: 1.25vw;
     position: absolute;
     top: 55%;
@@ -307,4 +314,9 @@ footer {
 
 .contact {
     right: 3%;
+    transition: filter 0.3s ease;
+}
+
+.contact:hover{
+    filter: brightness(70%);
 }

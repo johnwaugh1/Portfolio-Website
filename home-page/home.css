@@ -10,6 +10,7 @@ body {
     font-family: Raleway, sans-serif;
     line-height: 1.6;
     overflow: hidden;
+    background-color: #f0f0f0;
 }
 
 a {
@@ -30,18 +31,18 @@ h1 p {
 }
 
 ::-webkit-scrollbar-track {
-    background: #e4d5c7;
+    background: #d3d3d3;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #247158;
     border-radius: 10px;
-    border: 3px solid #e4d5c7;
+    border: 3px solid #d3d3d3;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #186049; 
+    background: #186049;
 }
 
 main {
@@ -50,7 +51,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #202020;
+    background-color: #1a1a1a;
     z-index: -2;
 }
 
@@ -60,14 +61,14 @@ main h1 {
     top: 71%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #E4D5C7;
+    color: #f7f7f7;
     line-height: 1;
 }
 
 header {
     position: relative;
     background-color: #247158;
-    color: #E4D5C7;
+    color: #f7f7f7;
     text-align: right;
     padding-right: 1.75vw;
     border-bottom-left-radius: 2.5vw;
@@ -123,7 +124,7 @@ header {
 }
 
 .dropdown-content a {
-    color: #E4D5C7;
+    color: #f7f7f7;
     padding: 1vw 1.6vw;
     text-decoration: none;
     text-align: center;
@@ -133,7 +134,7 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: #185548;
+    background-color: #14503d;
 }
 
 .dropdown-content.show {
@@ -143,7 +144,7 @@ header {
 }
 
 .headshot-container {
-    background-color: black;
+    background-color: #1a1a1a;
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -156,7 +157,7 @@ header {
 }
 
 .headshot-background {
-    background-color: #E4D5C7;
+    background-color: #f7f7f7;
     width: 21vw;
     height: 21vw;
     border-radius: 50%;
@@ -190,7 +191,7 @@ footer {
     left: -0.5vw;
     width: 101%;
     height: 100%;
-    background-color: #95877A;
+    background-color: #707070;
     z-index: 1;
     padding-top: 0.75vw;
     border-top-left-radius: 3vw;
@@ -202,7 +203,7 @@ footer {
     left: 0.5vw;
     width: 99%;
     height: 100%;
-    background-color: #E4D5C7;
+    background-color: #ffe8dc;
     z-index: -1;
     border-top-left-radius: 2.75vw;
     border-top-right-radius: 2.75vw;
@@ -219,6 +220,13 @@ footer {
     position: absolute;
     top: 10%;
     transform: translate(-50%, -50%);
+    transition: filter 0.3s ease;
+}
+
+.gmail:hover,
+.linkedin:hover,
+.github:hover {
+    filter: brightness(90%);
 }
 
 .gmail {
@@ -278,7 +286,7 @@ footer {
 
 .copyright,
 .contact {
-    color: #95877A;
+    color: #707070;
     font-size: 1.25vw;
     position: absolute;
     top: 8.5%;
@@ -291,4 +299,9 @@ footer {
 
 .contact {
     right: 3%;
+    transition: filter 0.3s ease;
+}
+
+.contact:hover{
+    filter: brightness(70%);
 }

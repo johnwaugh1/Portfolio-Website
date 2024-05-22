@@ -29,19 +29,20 @@ h2 {
     font-size: 2.25vw;
 }
 
+/* Custom Scrollbar for Webkit Browsers */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #e4d5c7;
+    background: #f7f7f7;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #247158;
     border-radius: 10px;
-    border: 3px solid #e4d5c7;
+    border: 3px solid #f7f7f7;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -51,7 +52,7 @@ h2 {
 header {
     position: relative;
     background-color: #247158;
-    color: #E4D5C7;
+    color: #f7f7f7;
     text-align: right;
     padding-right: 2.5vw;
     border-bottom-left-radius: 2.5vw;
@@ -107,7 +108,7 @@ header {
 }
 
 .dropdown-content a {
-    color: #E4D5C7;
+    color: #f7f7f7;
     padding: 1vw 1.6vw;
     text-decoration: none;
     text-align: center;
@@ -298,7 +299,7 @@ main {
     top: 20vh;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fafafa;
+    background-color: #f7f7f7;
     border-radius: 0.5vw;
     padding: 20px;
     max-width: 80%;
@@ -312,9 +313,11 @@ main {
     margin-bottom: 10px;
     margin-top: 0;
     overflow-wrap: break-word;
+    color: #000;
 }
 
 .panel p {
+    color: #535353;
     font-size: 1.25em;
     margin: 20px;
     overflow-wrap: break-word;
@@ -336,10 +339,11 @@ main {
     border: none;
     cursor: pointer;
     font-size: 24px;
+    transition: background-color 0.3s ease;
 }
 
 #closePanel:hover {
-    background-color: #b9b9b99d;
+    background-color: #b9b9b9;
 }
 
 footer {
@@ -348,7 +352,7 @@ footer {
     left: -0.5vw;
     width: 101%;
     height: 15%;
-    background-color: #95877A;
+    background-color: #707070;
     z-index: 1;
     padding-top: 0.75vw;
     border-top-left-radius: 3vw;
@@ -360,7 +364,7 @@ footer {
     left: 0.5vw;
     width: 99%;
     height: 100%;
-    background-color: #E4D5C7;
+    background-color: #ffe8dc;
     z-index: -1;
     border-top-left-radius: 2.75vw;
     border-top-right-radius: 2.75vw;
@@ -377,6 +381,13 @@ footer {
     position: absolute;
     top: 60%;
     transform: translate(-50%, -50%);
+    transition: filter 0.3s ease;
+}
+
+.gmail:hover,
+.linkedin:hover,
+.github:hover {
+    filter: brightness(90%);
 }
 
 .gmail {
@@ -437,7 +448,7 @@ footer {
 
 .copyright,
 .contact {
-    color: #95877A;
+    color: #707070;
     font-size: 1.25vw;
     position: absolute;
     top: 55%;
@@ -450,4 +461,9 @@ footer {
 
 .contact {
     right: 5%;
+    transition: filter 0.3s ease;
+}
+
+.contact:hover{
+    filter: brightness(70%);
 }
