@@ -15,6 +15,7 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    background-color: #f1f5f9;
 }
 
 /* Link Styles */
@@ -54,50 +55,6 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #186049; 
-}
-
-/* Main Styles */
-main {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #FFFFFF;
-    z-index: -2;
-    overflow-y: auto;
-}
-
-main h1 {
-    position: absolute;
-    text-align: left;
-    margin: 0 auto;
-    top: 20%;
-    left: 13.85%;
-    transform: translate(-50%, -50%);
-    color: #000;
-    line-height: 1;
-}
-
-main h2 {
-    position: absolute;
-    text-align: left;
-    margin: 0 auto;
-    top: 26.5%;
-    left: 29.25%;
-    transform: translate(-50%, -50%);
-    color: #535353;
-    line-height: 1;
-}
-
-main p {
-    position: absolute;
-    text-align: left;
-    margin: 0 auto;
-    width: 90%;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #535353;
-    line-height: 1;
 }
 
 /* Header Styles */
@@ -183,55 +140,75 @@ header {
     opacity: 1;
 }
 
-/* Headshot Styles */
-.headshot-container,
-.headshot-background {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: 37.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.headshot-container {
-    background-color: #000;
-}
-
-.headshot-background {
-    background-color: #E4D5C7;
-    width: 21vw;
-    height: 21vw;
-}
-
-.headshot {
-    width: auto;
-    height: 140%;
-    object-fit: cover;
-}
-
-/* Background Image Styles */
-.background-image {
-    width: 100%;
-    filter: opacity(10%);
-    position: fixed;
+/* Main Styles */
+main {
+    background-color: #f1f5f9;
     z-index: -2;
-    top: -22vw;
+    overflow-y: auto;
+    padding: 1.6vw;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+}
+
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1.6vw;
+    padding-top: 1vw;
+}
+
+main h1 {
+    text-align: left;
+    color: #000;
+    line-height: 1;
+}
+
+main h2 {
+    text-align: left;
+    color: #535353;
+    line-height: 1;
+    margin-top: 0.5vw;
+}
+
+main p {
+    text-align: left;
+    color: #535353;
+    line-height: 1.5;
+    margin-top: 1.6vw;
+}
+
+.resume-container {
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+.resume {
+    display: inline-block;
+    padding: 0.5vw 1vw;
+    font-size: 1.6vw;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume:hover {
+    background-color: #0056b3;
 }
 
 /* Footer Styles */
 footer {
     position: absolute;
-    top: 100%;
+    top: 140%;
     left: -0.5vw;
     width: 101%;
     height: 15%;
     background-color: #95877A;
     z-index: 1;
     padding-top: 0.75vw;
+    margin-top: 1vw;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
 }

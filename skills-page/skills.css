@@ -10,6 +10,7 @@ body {
     font-family: Raleway, sans-serif;
     line-height: 1.6;
     overflow: hidden;
+    background-color: #f1f5f9;
 }
 
 a {
@@ -139,7 +140,7 @@ main {
     left: 49.5%;
     transform: translate(-50%, -50%);
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #f1f5f9;
     z-index: -2;
     display: flex;
     justify-content: center;
