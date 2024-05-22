@@ -2,7 +2,13 @@
     function toggleDropdown(event) {
         event.stopPropagation();
         const dropdownContent = document.getElementById("dropdown-content");
-        dropdownContent.classList.toggle("show");
+        if (dropdownContent.classList.contains('show')) {
+            dropdownContent.classList.remove('show');
+            dropdownContent.style.height = '0'; // Set height to 0 for closing animation
+        } else {
+            dropdownContent.classList.add('show');
+            dropdownContent.style.height = dropdownContent.scrollHeight + 'px'; // Set height to scrollHeight for opening animation
+        }
     }
 
     function closeDropdowns() {
@@ -11,6 +17,7 @@
             const openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
+                openDropdown.style.height = '0'; // Set height to 0 for closing animation
             }
         }
     }
@@ -28,6 +35,7 @@
         }
     });
 })();
+
 
 function openPanel(id) {
     var panel = document.getElementById('panel');

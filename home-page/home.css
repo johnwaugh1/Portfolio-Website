@@ -87,8 +87,8 @@ header {
 
 .dropdown-btn {
     position: absolute;
-    top: 0.4vw;
-    left: 1.5vw;
+    top: 0;
+    left: 2vw;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -96,26 +96,28 @@ header {
 }
 
 .dropdown-btn img {
-    width: 3.75vw;
+    width: 6vw;
     height: auto;
 }
 
 .dropdown-btn:hover {
     background-color: #186049;
-    border-radius: 0.25vw;
+    border-radius: 0.5vw;
 }
 
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #186049;
     min-width: 3vw;
     box-shadow: 0 0.8vw 1.6vw 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     opacity: 0;
+    height: 0;
+    overflow: hidden;
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.5s ease-in-out;
     transform-origin: top;
     transform: scaleY(0);
 }
@@ -135,9 +137,9 @@ header {
 }
 
 .dropdown-content.show {
-    display: block;
-    transform: scaleY(1);
     opacity: 1;
+    height: auto;
+    transform: scaleY(1);
 }
 
 .headshot-container {
